@@ -4,8 +4,8 @@
   padding-top: 30px;
   position: fixed;
   top: 0;
-  background-color: var(--bg-color-dark);
-  // box-shadow: 0px 0px 1px 0px black;
+  background-color: var(--primary-color);
+  box-shadow: 0px -9px 14px 1px var(--secondary-color);
   z-index: 3;
   left: 0;
 }
@@ -57,7 +57,7 @@
   // @include flex($direction:column, $justify:flex-start, $align:flex-start);
   padding: 28px;
   transition: all .8s;
-  background-color: var(--bg-color-dark);
+  background-color: var(--primary-color);
   z-index: 4;
   transform: translateX(100%);
 }

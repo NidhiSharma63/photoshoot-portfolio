@@ -25,7 +25,7 @@ const Navbar = () => {
           sx={{
             fontSize: {lg:'32px',md:'28px',sm:'24px',xs:'20px'},
           }}>
-            saurav sharma
+            JS
           </Typography>
         </ThemeProvider>
         </Box>

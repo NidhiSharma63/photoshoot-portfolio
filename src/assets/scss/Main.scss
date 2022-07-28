@@ -26,9 +26,11 @@
 }
 
 :root{
-  --bg-color-dark: #04020F;
-  --bg-color-light:#2A2C39;
-  --bg-color-extra-light: #40424D;
+  // --bg-color-dark: #04020F;
+  // --bg-color-light:#2A2C39;
+  // --bg-color-extra-light: #40424D;
+  --primary-color: #04020F;
+  --secondary-color: #be7724;
 
   --font-family-lobster: 'Lobster Two', cursive;
   --font-family-Bitter: 'Bitter', serif;
@@ -55,7 +57,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color: var(--bg-color-dark);
+  background-color: var(--primary-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;

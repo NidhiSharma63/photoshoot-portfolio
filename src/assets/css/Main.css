@@ -29,7 +29,8 @@
   padding-top: 30px;
   position: fixed;
   top: 0;
-  background-color: var(--bg-color-dark);
+  background-color: var(--primary-color);
+  box-shadow: 0px -9px 14px 1px var(--secondary-color);
   z-index: 3;
   left: 0;
 }
@@ -84,7 +85,7 @@
   background-color: var(--bg-color-light);
   padding: 28px;
   transition: all 0.8s;
-  background-color: var(--bg-color-dark);
+  background-color: var(--primary-color);
   z-index: 4;
   transform: translateX(100%);
 }
@@ -134,9 +135,8 @@
 }
 
 :root {
-  --bg-color-dark: #04020F;
-  --bg-color-light:#2A2C39;
-  --bg-color-extra-light: #40424D;
+  --primary-color: #04020F;
+  --secondary-color: #be7724;
   --font-family-lobster: "Lobster Two", cursive;
   --font-family-Bitter: "Bitter", serif;
   --font-family-Berkshire: "Berkshire Swash", cursive;
@@ -159,7 +159,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-color-dark);
+  background-color: var(--primary-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
