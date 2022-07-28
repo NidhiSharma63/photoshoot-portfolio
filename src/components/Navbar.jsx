@@ -4,6 +4,7 @@ import { Stack,Box,Typography,Button,ThemeProvider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { logoTypography } from '../MaterialUI/typography';
+import { menuIcon } from '../MaterialUI/IconsTheme';
 import SideNavbar  from './Sidebar';
 
 const Navbar = () => {
@@ -17,6 +18,8 @@ const Navbar = () => {
    <>
      <Box
       className='navbar-wrapper'>
+      <Box className='nav-shadow'></Box>
+      {/* <Box className='nav-shadow'></Box> */}
       <Box
       className='navbar'>
         <Box>
@@ -35,12 +38,11 @@ const Navbar = () => {
           className='nav-menu'>
             <Stack
             direction='row'
-            spacing={8}>
+            spacing={10}>
               <a href='#hero-banner-wrapper' className='nav-link'>Home</a>
               <a href='#services-wrapper' className='nav-link'>Services</a>
-              <a href='#skills-wrapper' className='nav-link'>Skills</a>
               <a href='#project-wrapper' className='nav-link'>Work</a>
-              <a href='#blog-wrapper' className='nav-link'>Blog</a>
+              <a href='#blog-wrapper' className='nav-link'>Contact</a>
             </Stack>
           </Box>
           <Box>
@@ -49,15 +51,9 @@ const Navbar = () => {
         <Box 
         component='span'
         className='menu-icon'>
-          <MenuIcon
-          onClick={()=>setSideNavbarOpen(true)}
-            sx={{
-              color:'var(--color-white)',
-              fontSize:'29px',
-              '&:hover':{
-                color:'var(--light-whiteColor)',
-              }
-            }}/>
+          <ThemeProvider theme={menuIcon}>
+            <MenuIcon onClick={()=>setSideNavbarOpen(true)}/>
+          </ThemeProvider>
         </Box>
       </Box>
     </Box>

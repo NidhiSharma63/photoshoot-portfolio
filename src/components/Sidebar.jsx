@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 
-import { Stack,Box } from '@mui/material';
+import { Stack,Box,ThemeProvider } from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
+
+import { crossIcon } from '../MaterialUI/IconsTheme';
 
 const SideNavbar = ({setSideNavbarOpen,NavbarOpen}) => {
   
@@ -24,21 +26,9 @@ const SideNavbar = ({setSideNavbarOpen,NavbarOpen}) => {
         <Box 
         component='span'
         className='close-icon'>
-          <ClearIcon
-          onClick={() => handleClearEvent()}
-          sx={{
-            color:'var(--text-color)',
-            fontSize:'50px',
-            border:'1px solid var(--btn-border-color)',
-            borderRadius:'50%',
-            padding:'10px',
-            cursor:'pointer',
-            transition:'all 0.3s ease',
-            '&:hover':{
-              backgroundColor:'var(--bg-color-light)',
-              color:'var(--color-white)'
-            }
-          }}/>
+          <ThemeProvider theme={crossIcon}>
+            <ClearIcon onClick={() => handleClearEvent()}/>
+          </ThemeProvider>
         </Box>
         <Box>
         <Stack
