@@ -129,6 +129,36 @@
   transition: all 10s;
 }
 
+.main-hero-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 130px;
+}
+
+.hero-wrapper {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-wrapper {
+  position: relative;
+}
+
+.yellow-dots {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+  width: 192px;
+  top: -76px;
+  transform: rotate(96deg);
+  left: -80px;
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3

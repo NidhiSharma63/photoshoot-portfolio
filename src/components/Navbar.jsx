@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-import { Stack,Box,Typography,Button,ThemeProvider } from '@mui/material';
+import { Stack,Box,Typography,ThemeProvider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { logoTypography } from '../MaterialUI/typography';
