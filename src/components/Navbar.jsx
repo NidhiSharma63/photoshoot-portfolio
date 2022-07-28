@@ -1,14 +1,64 @@
-import React from 'react';
-import { Box,Typography,ThemeProvider } from '@mui/material';
+import React,{useState} from 'react';
+
+import { Stack,Box,Typography,Button,ThemeProvider } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+
+import { logoTypography } from '../MaterialUI/typography';
+import { menuIcon } from '../MaterialUI/IconsTheme';
+import SideNavbar  from './Sidebar';
 
 const Navbar = () => {
-  return (
-    <Typography
-    sx={{
-      fontSize:{lg:'10rem',xs:'5rem'},
-      color:{lg:'green',xs:'orange'},
 
-    }}>Hello World</Typography>
+  const [sideNavbarOpen,setSideNavbarOpen] = useState(false);
+  const html = document.querySelector('html');
+
+  sideNavbarOpen ? html.style.overflowY = 'hidden' : html.style.overflowY = 'auto';
+
+  return (
+   <>
+     <Box
+      className='navbar-wrapper'>
+      <Box className='nav-shadow'></Box>
+      {/* <Box className='nav-shadow'></Box> */}
+      <Box
+      className='navbar'>
+        <Box>
+        <ThemeProvider theme={logoTypography}>
+          <Typography 
+          sx={{
+            fontSize: {lg:'32px',md:'28px',sm:'24px',xs:'20px'},
+          }}>
+            JS
+          </Typography>
+        </ThemeProvider>
+        </Box>
+        <Box
+        className='nav-items-wrapper'>
+          <Box
+          className='nav-menu'>
+            <Stack
+            direction='row'
+            spacing={10}>
+              <a href='#hero-banner-wrapper' className='nav-link'>Home</a>
+              <a href='#services-wrapper' className='nav-link'>Services</a>
+              <a href='#project-wrapper' className='nav-link'>Work</a>
+              <a href='#blog-wrapper' className='nav-link'>Contact</a>
+            </Stack>
+          </Box>
+          <Box>
+          </Box>  
+        </Box>
+        <Box 
+        component='span'
+        className='menu-icon'>
+          <ThemeProvider theme={menuIcon}>
+            <MenuIcon onClick={()=>setSideNavbarOpen(true)}/>
+          </ThemeProvider>
+        </Box>
+      </Box>
+    </Box>
+    <SideNavbar NavbarOpen={sideNavbarOpen} setSideNavbarOpen={setSideNavbarOpen}/>
+   </>
   )
 }
 

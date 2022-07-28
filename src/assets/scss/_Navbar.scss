@@ -4,19 +4,29 @@
   padding-top: 30px;
   position: fixed;
   top: 0;
-  background-color: var(--bg-color-dark);
-  box-shadow: 0px 0px 1px 0px black;
+  background-color: var(--primary-color);
+  box-shadow: 0px -9px 14px 1px var(--secondary-color);
   z-index: 3;
   left: 0;
+}
+.nav-shadow{
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 60px 13px var(--secondary-color);
 }
 .navbar{
   width: 94%;
   margin: auto;;
   // @include flex($direction:row, $justify:space-between, $align:center);
+  @include flex($direction:row, $justify:space-around, $align:center);
+
 }
 .nav-items-wrapper{
-  display: contents;
-  flex-grow: 1;
+  // display: contents;
+  // flex-grow: 1;
 }
 .nav-link{
   text-decoration: none;
@@ -28,15 +38,15 @@
   transition: all 0.5s ease;
 }
 .nav-link:hover{
-  color: var(--color-white);
+  color: var(--secondary-color);
 }
 .menu-icon{
   display: none;
 }
 
-@media screen and (max-width: 1050px){
-  .navbar-wrapper{
-    background-color: var(--bg-color-light);
+@media screen and (max-width: 800px){
+  .navbar{
+    @include flex($direction:row, $justify:space-between, $align:center);
   }
   .nav-items-wrapper{
     display: none;
@@ -57,7 +67,7 @@
   // @include flex($direction:column, $justify:flex-start, $align:flex-start);
   padding: 28px;
   transition: all .8s;
-  background-color: var(--bg-color-dark);
+  background-color: var(--primary-color);
   z-index: 4;
   transform: translateX(100%);
 }

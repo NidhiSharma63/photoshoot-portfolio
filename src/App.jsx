@@ -3,6 +3,7 @@ import { Box,Typography,ThemeProvider } from '@mui/material';
 import { customBreakPoints } from './MaterialUI/Breakpoints';
 
 import Navbar from './components/Navbar';
+import './assets/css/Main.css';
 
 const App = () => {
   return (
