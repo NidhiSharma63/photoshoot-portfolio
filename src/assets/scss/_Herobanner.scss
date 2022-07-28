@@ -12,9 +12,11 @@
   gap: 30px;
   @include flex($direction:column, $justify:center, $align:center);
 }
-.hero-image-wrapper{
+.hero-top-wrapper{
   position: relative;
-  // border: 1px solid white;
+}
+.hero-image-wrapper{
+  position:relative;
   overflow: hidden;
   height: 450px;
 }

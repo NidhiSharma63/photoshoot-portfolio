@@ -17,7 +17,7 @@ const Herobanner = () => {
       <Box
         className='hero-wrapper'>
           <Box
-            className='hero-image-wrapper'>
+            className='hero-top-wrapper'>
               <Box
                className='yellow-dots'
                component='img'
@@ -43,11 +43,14 @@ const Herobanner = () => {
                   </a>
                 </Box>
               <Box
-                className='hero-image'
-                component='img'
-                src={heroImage}
-                height='490px'
-              />
+                className='hero-image-wrapper'>
+                <Box
+                  className='hero-image'
+                  component='img'
+                  src={heroImage}
+                  height='490px'
+                />
+              </Box>
           </Box>
           <Box
             className='hero-text'>

@@ -147,6 +147,10 @@
   align-items: center;
 }
 
+.hero-top-wrapper {
+  position: relative;
+}
+
 .hero-image-wrapper {
   position: relative;
   overflow: hidden;
