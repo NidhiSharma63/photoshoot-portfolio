@@ -1,6 +1,10 @@
 import React from 'react';
 import { Stack,Box,Typography,Button,ThemeProvider } from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
 
+import { socialIconTheme } from '../MaterialUI/IconsTheme'
 import heroImage from '../assets/images/heroImage.webp';
 import yellowDots from '../assets/images/yellowDots.png';
 
@@ -20,6 +24,24 @@ const Herobanner = () => {
                 src={yellowDots}
                 position='absolute'
               />
+              <Box
+                className="social-link">
+                  <a href="">
+                    <ThemeProvider theme={socialIconTheme}>
+                      <FacebookIcon className='facebook'/>
+                    </ThemeProvider>
+                  </a>
+                  <a href="">
+                    <ThemeProvider theme={socialIconTheme}>
+                      <InstagramIcon className='instagram'/>
+                    </ThemeProvider>
+                  </a>
+                  <a href="">
+                    <ThemeProvider theme={socialIconTheme}>
+                      <EmailIcon className='gmail'/>
+                    </ThemeProvider>
+                  </a>
+                </Box>
               <Box
                 className='hero-image'
                 component='img'
