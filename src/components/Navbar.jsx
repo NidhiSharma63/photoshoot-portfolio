@@ -26,7 +26,7 @@ const Navbar = () => {
         <ThemeProvider theme={logoTypography}>
           <Typography 
           sx={{
-            fontSize: {lg:'32px',md:'28px',sm:'24px',xs:'20px'},
+            fontSize: {lg:'32px',xs:'26px'},
           }}>
             JS
           </Typography>
