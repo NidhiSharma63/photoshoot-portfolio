@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bitter:wght@300;400&family=Lobster+Two&family=Merriweather:wght@300;400&family=Roboto+Slab:wght@300;400&family=Work+Sans:wght@300;400&display=swap");
+.translate-right {
+  transform: translateX(100%);
+  opacity: 0.1;
+}
+
+.translate-left {
+  transform: translateX(-100%);
+  opacity: 0.1;
+}
+
+.transition-ease {
+  transition: all 1s ease-in-out;
+}
+
+.translate-up {
+  transform: translateY(200px);
+  opacity: 0.1;
+}
+
+.translate-contact {
+  transform: translateY(0px);
+  opacity: 0.1;
+}
+
 .navbar-wrapper {
   padding: 20px;
   width: 100%;
@@ -6,7 +30,6 @@
   position: fixed;
   top: 0;
   background-color: var(--bg-color-dark);
-  box-shadow: 0px 0px 1px 0px black;
   z-index: 3;
   left: 0;
 }
@@ -14,6 +37,10 @@
 .navbar {
   width: 94%;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-items-wrapper {
@@ -40,9 +67,6 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .navbar-wrapper {
-    background-color: var(--bg-color-light);
-  }
   .nav-items-wrapper {
     display: none;
   }
@@ -110,7 +134,7 @@
 }
 
 :root {
-  --bg-color-dark: #252734;
+  --bg-color-dark: #04020F;
   --bg-color-light:#2A2C39;
   --bg-color-extra-light: #40424D;
   --font-family-lobster: "Lobster Two", cursive;

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bitter:wght@300;400&family=Lobster+Two&family=Merriweather:wght@300;400&family=Roboto+Slab:wght@300;400&family=Work+Sans:wght@300;400&display=swap');
-// @import './utils';
+@import './utils';
 @import './Navbar' ;
 // @import './Herobanner';
 // @import './Services';
@@ -26,7 +26,7 @@
 }
 
 :root{
-  --bg-color-dark: #252734;
+  --bg-color-dark: #04020F;
   --bg-color-light:#2A2C39;
   --bg-color-extra-light: #40424D;
 
