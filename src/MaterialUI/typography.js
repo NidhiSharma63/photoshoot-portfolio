@@ -16,13 +16,13 @@ export const logoTypography = createTheme({
   }
 });
 
-
-export const HeroIntroTypography = createTheme({
+export const heroTypography1 = createTheme({
   components:{
     MuiTypography:{
       styleOverrides:{
         root:{
-          fontFamily: 'var(--font-family-Merriweather)',
+          fontSize: '35px',
+          fontFamily: 'var(--font-family-lobster)',
           fontWeight: 'var(--fw-medium)',
           letterSpacing: '2px',
           color: 'var(--color-white)',
@@ -32,6 +32,22 @@ export const HeroIntroTypography = createTheme({
   }
 });
 
+export const heroTypography2 = createTheme({
+  components:{
+    MuiTypography:{
+      styleOverrides:{
+        root:{
+          lineHeight: '1.7',
+          fontSize: '12px',
+          fontFamily: 'var(--font-family-Merriweather)',
+          fontWeight: 'var(--fw-medium)',
+          letterSpacing: '2px',
+          color: 'var(--color-white)',
+        }
+      }
+    }
+  }
+});
 
 export const HeroSubHeadingTypo = createTheme({
   components:{

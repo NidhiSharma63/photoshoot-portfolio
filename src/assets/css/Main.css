@@ -133,12 +133,14 @@
   width: 100%;
   position: relative;
   margin-top: 130px;
+  margin-bottom: 10rem;
 }
 
 .hero-wrapper {
   position: relative;
   width: 90%;
   margin: auto;
+  gap: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +149,8 @@
 
 .hero-image-wrapper {
   position: relative;
+  overflow: hidden;
+  height: 450px;
 }
 
 .yellow-dots {
@@ -231,6 +235,21 @@
     padding: 6px;
   }
 }
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.hero-intro-name {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-family: var(--font-family-Berkshire);
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3

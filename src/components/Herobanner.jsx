@@ -8,7 +8,7 @@ import { socialIconTheme } from '../MaterialUI/IconsTheme'
 import heroImage from '../assets/images/heroImage.webp';
 import yellowDots from '../assets/images/yellowDots.png';
 
-
+import { heroTypography1,heroTypography2 } from '../MaterialUI/typography'
 
 const Herobanner = () => {
   return (
@@ -46,8 +46,33 @@ const Herobanner = () => {
                 className='hero-image'
                 component='img'
                 src={heroImage}
-                height='450px'
+                height='490px'
               />
+          </Box>
+          <Box
+            className='hero-text'>
+              <ThemeProvider theme={heroTypography1}>
+                  <Typography>
+                    <Box component='span' color='var(--secondary-color)'>
+                      Hi!
+                    </Box> I'm  <span 
+                    className='hero-intro-name'>
+                      Deepak
+                    </span>
+                  </Typography>
+              </ThemeProvider>
+              <ThemeProvider theme={heroTypography1}>
+                  <Typography
+                  fontSize='23px'
+                  fontFamily='var(--font-family-Berkshire)'>
+                    <Box component='span' color='var(--secondary-color)'>photo</Box>grapher, <Box component='span' color='var(--secondary-color)'>video</Box>grapher.
+                  </Typography>
+              </ThemeProvider>
+              <ThemeProvider theme={heroTypography2}>
+                  <Typography>
+                    I wanna help you to get beautiful images to discover your journey.
+                  </Typography>
+              </ThemeProvider>
           </Box>
       </Box>
     </Box>

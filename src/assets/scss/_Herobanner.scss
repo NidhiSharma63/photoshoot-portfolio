@@ -2,16 +2,21 @@
   width: 100%;
   position: relative;
   margin-top: 130px;
+  margin-bottom: 10rem
 }
 .hero-wrapper{
   position: relative;
+  // border: 1px solid white;
   width:90%;
   margin: auto;
+  gap: 30px;
   @include flex($direction:column, $justify:center, $align:center);
 }
 .hero-image-wrapper{
   position: relative;
   // border: 1px solid white;
+  overflow: hidden;
+  height: 450px;
 }
 .yellow-dots{
   @include position($position:absolute, $top:-76px, $right:auto, $left:-80px);
@@ -57,4 +62,17 @@
     font-size: 33px;
     padding: 6px;
   }
+}
+
+// hero intro section
+.hero-text{
+  @include flex($direction:column, $justify:center, $align:center);
+  gap: 10px;
+  text-align: center;
+}
+
+.hero-intro-name{
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-family: var(--font-family-Berkshire);
 }
