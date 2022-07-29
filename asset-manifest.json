@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/photoshoot-portfolio/static/css/main.b97d4cba.css",
+    "main.js": "/photoshoot-portfolio/static/js/main.df53d417.js",
+    "static/media/img1.jpg": "/photoshoot-portfolio/static/media/img1.e595b12eec41d896d173.jpg",
+    "static/media/w-img5.jpg": "/photoshoot-portfolio/static/media/w-img5.39c5823585c19211ef72.jpg",
+    "static/media/img4.jpg": "/photoshoot-portfolio/static/media/img4.021a50ee0e5edb6f9b7e.jpg",
+    "static/media/w-img2.jpg": "/photoshoot-portfolio/static/media/w-img2.a239f40b45d5dfce6363.jpg",
+    "static/media/w-img1.jpg": "/photoshoot-portfolio/static/media/w-img1.08b5fa5df1b7e1a5156d.jpg",
+    "static/media/img2.jpg": "/photoshoot-portfolio/static/media/img2.3deef94de2819f80e553.jpg",
+    "static/media/w-img3.jpg": "/photoshoot-portfolio/static/media/w-img3.ed9fb323866f06e1a447.jpg",
+    "static/media/w-img4.jpg": "/photoshoot-portfolio/static/media/w-img4.e14cd895da11ad00e3e4.jpg",
+    "static/media/img5.jpg": "/photoshoot-portfolio/static/media/img5.dbc0897151e33fc883a1.jpg",
+    "static/media/img3.jpg": "/photoshoot-portfolio/static/media/img3.cf4fd293e4dc0497f606.jpg",
+    "static/media/heroImage.webp": "/photoshoot-portfolio/static/media/heroImage.fd182f9c8ef64cbbb1c3.webp",
+    "static/media/yellowDots.png": "/photoshoot-portfolio/static/media/yellowDots.eb7ab467f4800e5d7994.png",
+    "index.html": "/photoshoot-portfolio/index.html",
+    "main.b97d4cba.css.map": "/photoshoot-portfolio/static/css/main.b97d4cba.css.map",
+    "main.df53d417.js.map": "/photoshoot-portfolio/static/js/main.df53d417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b97d4cba.css",
+    "static/js/main.df53d417.js"
+  ]
+}
