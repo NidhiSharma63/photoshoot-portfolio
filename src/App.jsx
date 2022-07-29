@@ -1,11 +1,13 @@
 import React from 'react';
-import { Box,Typography,ThemeProvider } from '@mui/material';
+import { Box,ThemeProvider } from '@mui/material';
 import { customBreakPoints } from './MaterialUI/Breakpoints';
 
 import Navbar from './components/Navbar';
 import Herobanner from './components/Herobanner';
 import Services from './components/Services';
 import Work from './components/Work';
+import Contact from './components/Contact';
+
 import './assets/css/Main.css';
 
 const App = () => {
@@ -16,12 +18,7 @@ const App = () => {
         <Herobanner/>
         <Services/>
         <Work/>
-        {/* <Typography
-        sx={{
-          fontSize:{lg:'10rem',xs:'5rem'},
-          color:{lg:'green',xs:'orange'},
-
-        }}>Hello World</Typography> */}
+        <Contact/>
       </Box>
     </ThemeProvider> 
   )
