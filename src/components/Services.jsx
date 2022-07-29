@@ -5,7 +5,7 @@ import {
   ServicesTextSecondaryColor,
   subHeadingTypoTheme,
   SkillsDetailsTypo 
-} from '../MaterialUI/typography'
+} from '../MaterialUI/typography';
 
 import { servicesData,skillExepriene } from '../data';
 

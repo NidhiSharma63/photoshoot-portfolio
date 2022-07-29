@@ -317,6 +317,31 @@
   font-size: 14px;
 }
 
+.work-main-wrapper {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.work-wrapper {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.photoshoot-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3
