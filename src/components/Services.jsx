@@ -2,8 +2,8 @@ import React from 'react';
 import { Stack,Box,ThemeProvider,Typography } from '@mui/material';
 import { 
   headingTheme,
-  ServicesTextSecondaryColor,
-  subHeadingTypoTheme,
+  SubHeadingTypoTheme,
+  SubHeadingDetailsTypo,
   SkillsDetailsTypo 
 } from '../MaterialUI/typography';
 
@@ -29,10 +29,10 @@ const Services = () => {
                 <Box
                   className='service'
                   key={index}>
-                  <ThemeProvider theme={ServicesTextSecondaryColor}>
+                  <ThemeProvider theme={SubHeadingTypoTheme}>
                     <Typography textAlign='center'>{service.title}</Typography>
                   </ThemeProvider>
-                  <ThemeProvider theme={subHeadingTypoTheme}>
+                  <ThemeProvider theme={SubHeadingDetailsTypo}>
                     <Typography fontSize='15px'>{service.details}</Typography>
                   </ThemeProvider>
                 </Box>

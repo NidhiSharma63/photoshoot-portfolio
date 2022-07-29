@@ -342,6 +342,14 @@
      object-position: 50% 50%;
 }
 
+.main-galler-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3

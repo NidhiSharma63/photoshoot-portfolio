@@ -13,4 +13,8 @@
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+} 
+.main-galler-wrapper{
+  @include flex($direction:column, $justify:space-between, $align:center);
+  gap: 50px;
 }
