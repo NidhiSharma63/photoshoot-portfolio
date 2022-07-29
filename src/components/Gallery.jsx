@@ -2,10 +2,7 @@ import React from 'react';
 import { Box,Typography,ThemeProvider,Grid } from '@mui/material';
 
 import { 
-  headingTheme,
-  SubHeadingTypoTheme,
-  subHeadingTypoTheme,
-  SkillsDetailsTypo 
+  SubHeadingTypoTheme
 } from '../MaterialUI/typography';
 
 const Gallery = ({titleName,ImagesArray}) => {
@@ -13,11 +10,8 @@ const Gallery = ({titleName,ImagesArray}) => {
   return (
     <Box>
       <ThemeProvider theme={SubHeadingTypoTheme}>
-        <Typography 
-          textAlign='center'
-          fontSize='25px'
-          color='var(--color-white)'
-          marginBottom='30px'>
+        <Typography
+          className='gallery-title-name'>
           {titleName}
         </Typography>
       </ThemeProvider>
