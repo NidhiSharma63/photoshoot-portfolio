@@ -26,3 +26,20 @@
   @include flex($direction:column, $justify:space-between, $align:center);
   gap: 30px;
 }
+
+// skills details
+
+.skills-details-wrapper{
+  @include flex($direction:row, $justify:space-between, $align:center);
+  gap: 10px;
+}
+
+.skill-name{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family-Berkshire);
+  letter-spacing: 1px;
+  font-size: 14px;
+}

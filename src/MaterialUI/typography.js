@@ -97,6 +97,22 @@ export const ServicesTextSecondaryColor = createTheme({
   }
 });
 
+export const SkillsDetailsTypo = createTheme({
+  components:{
+    MuiTypography:{
+      styleOverrides:{
+        root:{
+          fontSize:'17px',
+          fontFamily: 'var(--font-family-worksans)',
+          fontWeight: 'var(--fw-medium)',
+          letterSpacing: '1px',
+          color: 'var(--light-whiteColor)',
+        }
+      }
+    }
+  }
+});
+
 
 // export const ServicesTextWColor = createTheme({
 //   components:{
@@ -115,51 +131,51 @@ export const ServicesTextSecondaryColor = createTheme({
 // });
 
 
-export const HeroSubHeadingTypo = createTheme({
-  components:{
-    MuiTypography:{
-      styleOverrides:{
-        root:{
-          fontSize:'20px',
-          fontFamily: 'var(--font-family-worksans)',
-          fontWeight: 'var(--fw-medium)',
-          letterSpacing: '2px',
-          color: 'var(--light-whiteColor)',
-        }
-      }
-    }
-  }
-});
+// export const HeroSubHeadingTypo = createTheme({
+//   components:{
+//     MuiTypography:{
+//       styleOverrides:{
+//         root:{
+//           fontSize:'20px',
+//           fontFamily: 'var(--font-family-worksans)',
+//           fontWeight: 'var(--fw-medium)',
+//           letterSpacing: '2px',
+//           color: 'var(--light-whiteColor)',
+//         }
+//       }
+//     }
+//   }
+// });
 
 
-export const sectionHedingTypography = createTheme({
-  components:{
-    MuiTypography:{
-      styleOverrides:{
-        root:{
-          fontFamily: 'var(--font-family-Merriweather)',
-          fontWeight: 'var(--fw-light)',
-          letterSpacing: '1px',
-          color: 'var(--color-white)',
-        }
-      }
-    }
-  }
-})
+// export const sectionHedingTypography = createTheme({
+//   components:{
+//     MuiTypography:{
+//       styleOverrides:{
+//         root:{
+//           fontFamily: 'var(--font-family-Merriweather)',
+//           fontWeight: 'var(--fw-light)',
+//           letterSpacing: '1px',
+//           color: 'var(--color-white)',
+//         }
+//       }
+//     }
+//   }
+// })
 
 
-export const errorTypography = createTheme({
-  components:{
-    MuiTypography:{
-      styleOverrides:{
-        root:{
-          color:'red',
-          letterSpacing:'1.6px',
-          marginLeft:'10px',
-          marginTop: '-20px',
-          marginBottom: '-21px',
-        }
-      }
-    }
-  }
-})
+// export const errorTypography = createTheme({
+//   components:{
+//     MuiTypography:{
+//       styleOverrides:{
+//         root:{
+//           color:'red',
+//           letterSpacing:'1.6px',
+//           marginLeft:'10px',
+//           marginTop: '-20px',
+//           marginBottom: '-21px',
+//         }
+//       }
+//     }
+//   }
+// })
