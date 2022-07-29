@@ -3,6 +3,7 @@ import { Box,Typography,ThemeProvider } from '@mui/material';
 import { customBreakPoints } from './MaterialUI/Breakpoints';
 
 import Navbar from './components/Navbar';
+import Herobanner from './components/Herobanner';
 import './assets/css/Main.css';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <ThemeProvider theme={customBreakPoints}>
       <Box>
         <Navbar />
+        <Herobanner/>
         {/* <Typography
         sx={{
           fontSize:{lg:'10rem',xs:'5rem'},

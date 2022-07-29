@@ -5,6 +5,13 @@
   align-items: $align;
 }
 
+@mixin position($position, $top, $right, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+}
+
 // @mixin half-circle{
 //   position: absolute;
 //   content: "";

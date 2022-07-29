@@ -37,3 +37,26 @@ export const menuIcon = createTheme({
     }
   }
 });
+
+export const socialIconTheme = createTheme({
+  components:{
+    MuiSvgIcon:{
+      styleOverrides:{
+        root:{
+          cursor:'pointer',
+          fontSize:'33px',
+          color:'var(--secondary-color)',
+          border:'1px solid var(--secondary-color)',
+          padding:'6px',
+          borderRadius:'50%',
+          background: 'var(--bg-color-dark)',
+          // transition: 'all 0.3s ease-in-out',
+          // '&:hover':{
+          //   background: 'var(--color-white)',
+          //   color:'var(--bg-color-light)',
+          // }
+        }
+      }
+    }
+  }
+});
