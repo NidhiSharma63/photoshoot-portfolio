@@ -133,12 +133,11 @@
   width: 100%;
   position: relative;
   margin-top: 130px;
-  margin-bottom: 10rem;
 }
 
 .hero-wrapper {
   position: relative;
-  width: 90%;
+  width: 91%;
   margin: auto;
   gap: 30px;
   display: flex;
@@ -155,7 +154,7 @@
   bottom: 0;
   width: 0px;
   height: 75px;
-  box-shadow: -29px -3px 83px 13px var(--secondary-color);
+  box-shadow: -29px -3px 120px 13px var(--secondary-color);
 }
 
 .hero-top-wrapper {
@@ -265,6 +264,41 @@
   font-family: var(--font-family-Berkshire);
 }
 
+.main-service-wrapper {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.service-shadow {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: auto;
+  height: 13px;
+  width: 0px;
+  box-shadow: -29px -3px 83px 13px var(--secondary-color);
+}
+
+.service-wrapper {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.services-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3
@@ -294,7 +328,7 @@
   --btn-border-color: #afa9a928;
   --btn-hover-bg-color: #2A2C39;
   --half-circle-border-color:#4E505B;
-  --fw-light: 400;
+  --fw-light: 200;
   --fw-medium: 500;
   --fw-bold: 700;
 }

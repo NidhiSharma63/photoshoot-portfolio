@@ -2,12 +2,13 @@
   width: 100%;
   position: relative;
   margin-top: 130px;
-  margin-bottom: 10rem
+  // border: 1px solid white;
+  // margin-bottom: 10rem
 }
 .hero-wrapper{
   position: relative;
   // border: 1px solid white;
-  width:90%;
+  width:91%;
   margin: auto;
   gap: 30px;
   @include flex($direction:column, $justify:center, $align:center);
@@ -17,7 +18,7 @@
   bottom: 0;
   width: 0px;
   height: 75px;
-  box-shadow: -29px -3px 83px 13px var(--secondary-color);
+  box-shadow: -29px -3px 120px 13px var(--secondary-color);
 }
 .hero-top-wrapper{
   position: relative;
