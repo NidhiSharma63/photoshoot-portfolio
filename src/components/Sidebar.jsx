@@ -34,19 +34,19 @@ const SideNavbar = ({setSideNavbarOpen,NavbarOpen}) => {
         <Stack
           spacing={5}>
             <a 
-              href='#hero-banner-wrapper' 
+              href='#main-hero-wrapper' 
               onClick={() => setSideNavbarOpen(false)}
               className='nav-link'>Home</a>
             <a 
-              href='#services-wrapper' 
+              href='#main-service-wrapper' 
               onClick={() => setSideNavbarOpen(false)}
               className='nav-link'>Services</a>
             <a 
-              href='#project-wrapper' 
+              href='#work-main-wrapper' 
               onClick={() => setSideNavbarOpen(false)}
               className='nav-link'>Work</a>
             <a 
-              href='#contact-wrapper' 
+              href='#main-contact-wrapper' 
               onClick={() => setSideNavbarOpen(false)}
               className='nav-link'>Contact</a>
         </Stack>

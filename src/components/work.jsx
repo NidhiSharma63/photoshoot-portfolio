@@ -12,7 +12,8 @@ import { PhotoshootImages,weddingShootImages } from '../data';
 const Work = () => {
   return (
     <Box
-      className='work-main-wrapper'>
+      className='work-main-wrapper'
+      id='work-main-wrapper'>
       <Box
         className='work-wrapper'>
         <ThemeProvider theme={headingTheme}>

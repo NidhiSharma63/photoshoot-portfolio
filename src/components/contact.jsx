@@ -20,7 +20,8 @@ import {
 const Contact = () => {
   return (
     <Box
-      className='main-contact-wrapper'>
+      className='main-contact-wrapper'
+      id="main-contact-wrapper">
       <Box
         className='contact-wrapper'>
          <ThemeProvider theme={headingTheme}>

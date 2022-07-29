@@ -12,7 +12,8 @@ import { servicesData,skillExepriene } from '../data';
 const Services = () => {
   return (
     <Box
-      className='main-service-wrapper'>
+      className='main-service-wrapper'
+      id='main-service-wrapper'>
         <Box className='service-shadow'></Box>
       <Box
         className='service-wrapper'>
