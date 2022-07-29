@@ -7,4 +7,19 @@ export const servicesData = [
     title: 'videography',
     details: 'We take care of all the details of your video shoot. We will make sure you get the best shot possible.',
   }
+];
+
+export const skillExepriene = [
+  {
+    title: 'Exeperiene',
+    desc: '5 year',
+  },
+  {
+    title: 'Photoshoot',
+    desc: '100',
+  },
+  {
+    title: 'wedding shoot',
+    desc: '50',
+  }
 ]

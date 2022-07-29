@@ -299,6 +299,24 @@
   gap: 30px;
 }
 
+.skills-details-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-name {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family-Berkshire);
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3

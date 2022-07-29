@@ -1,8 +1,13 @@
 import React from 'react';
 import { Stack,Box,ThemeProvider,Typography } from '@mui/material';
-import { headingTheme,ServicesTextSecondaryColor,subHeadingTypoTheme } from '../MaterialUI/typography'
+import { 
+  headingTheme,
+  ServicesTextSecondaryColor,
+  subHeadingTypoTheme,
+  SkillsDetailsTypo 
+} from '../MaterialUI/typography'
 
-import { servicesData } from '../data';
+import { servicesData,skillExepriene } from '../data';
 
 const Services = () => {
   return (
@@ -35,30 +40,34 @@ const Services = () => {
             })
           }
         </Box>
+        <Box
+        className='skills-details-wrapper'>
+          {
+            skillExepriene.map((skill,index)=>{
+              return(
+                <Box
+                className='skills-details'
+                key={index}
+                textAlign='center'>
+                  <ThemeProvider theme={SkillsDetailsTypo}>
+                    <Typography 
+                      color='var(--color-white)'>{skill.desc}
+                      <Box 
+                        component='span' 
+                        color='var(--secondary-color)'
+                        fontSize='30px'>+
+                      </Box>
+                    </Typography>
+                  </ThemeProvider>
+                  <Box className='skill-name'>{skill.title}</Box>
+                </Box>
+              )
+            })
+          }
+        </Box>
       </Box>
     </Box>
   )
 }
 
 export default Services;
-
-
-{/* <Box
-className='service-photography'>
-<ThemeProvider theme={ServicesTextSecondaryColor}>
-  <Typography>Photoshoot</Typography>
-</ThemeProvider>
-<ThemeProvider theme={subHeadingTypoTheme}>
-<Typography textAlign='start'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum at distinctio libero adipisci quibusdam.</Typography>
-</ThemeProvider>
-</Box>
-<Box
-className='service-videography'
-textAlign='end'>
-<ThemeProvider theme={ServicesTextSecondaryColor}>
-<Typography>videography</Typography>
-</ThemeProvider>
-<ThemeProvider theme={subHeadingTypoTheme}>
- <Typography textAlign='end'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum at distinctio libero adipisci quibusdam.</Typography>
-</ThemeProvider>
-</Box> */}
