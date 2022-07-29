@@ -350,6 +350,23 @@
   gap: 50px;
 }
 
+.gallery-title-name {
+  text-align: center;
+  font-size: 25px !important;
+  color: var(--color-white) !important;
+  margin-bottom: 30px;
+  position: relative;
+}
+.gallery-title-name::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: auto;
+  margin-bottom: 30px;
+}
+
 /*
   Z-INDEX
   NAVBAR-- 3
