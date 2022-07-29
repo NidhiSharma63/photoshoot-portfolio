@@ -8,7 +8,7 @@ import { socialIconTheme } from '../MaterialUI/IconsTheme'
 import heroImage from '../assets/images/heroImage.webp';
 import yellowDots from '../assets/images/yellowDots.png';
 
-import { heroTypography1,subHeadingTypoTheme } from '../MaterialUI/typography'
+import { heroTypography1,SubHeadingDetailsTypo } from '../MaterialUI/typography'
 
 const Herobanner = () => {
   return (
@@ -71,7 +71,7 @@ const Herobanner = () => {
                     <Box component='span' color='var(--secondary-color)'>photo</Box>grapher, <Box component='span' color='var(--secondary-color)'>video</Box>grapher.
                   </Typography>
               </ThemeProvider>
-              <ThemeProvider theme={subHeadingTypoTheme}>
+              <ThemeProvider theme={SubHeadingDetailsTypo}>
                   <Typography>
                     I wanna help you to get beautiful images to discover your journey.
                   </Typography>

@@ -1,0 +1,20 @@
+.work-main-wrapper{
+  @include main-wrapper;
+}
+.work-wrapper{
+  width: 95%;
+  margin: auto;
+  // border: 1px solid white;
+  @include flex($direction:column, $justify:space-between, $align:center);
+  gap: 40px;
+}
+.photoshoot-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+} 
+.main-galler-wrapper{
+  @include flex($direction:column, $justify:space-between, $align:center);
+  gap: 50px;
+}

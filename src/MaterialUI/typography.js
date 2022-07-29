@@ -32,7 +32,7 @@ export const heroTypography1 = createTheme({
   }
 });
 
-export const subHeadingTypoTheme = createTheme({
+export const SubHeadingDetailsTypo = createTheme({
   components:{
     MuiTypography:{
       styleOverrides:{
@@ -80,7 +80,7 @@ export const headingTheme = createTheme({
   }
 });
 
-export const ServicesTextSecondaryColor = createTheme({
+export const SubHeadingTypoTheme = createTheme({
   components:{
     MuiTypography:{
       styleOverrides:{

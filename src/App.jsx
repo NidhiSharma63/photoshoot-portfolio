@@ -5,6 +5,7 @@ import { customBreakPoints } from './MaterialUI/Breakpoints';
 import Navbar from './components/Navbar';
 import Herobanner from './components/Herobanner';
 import Services from './components/Services';
+import Work from './components/Work';
 import './assets/css/Main.css';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Navbar />
         <Herobanner/>
         <Services/>
+        <Work/>
         {/* <Typography
         sx={{
           fontSize:{lg:'10rem',xs:'5rem'},
