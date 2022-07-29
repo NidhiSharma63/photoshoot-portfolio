@@ -1,0 +1,17 @@
+.main-contact-wrapper{
+  @include main-wrapper;
+  margin-bottom: 10px;
+}
+.contact-wrapper{
+  @include flex($direction:column, $justify:space-between, $align:center);
+  gap:30px;
+}
+
+.contact-section-1{
+  @include flex($direction:column, $justify:flex-start, $align:flex-start);
+  gap:20px;
+}
+.contact-section-2{
+  @include flex($direction:row, $justify:flex-start, $align:flex-start);
+  gap:30px;
+}
