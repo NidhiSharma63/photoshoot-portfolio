@@ -1,0 +1,28 @@
+.main-service-wrapper{
+  // border: 1px solid;
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+.service-shadow{
+  @include position($position:absolute, $top:100px, $right:auto, $left:0);
+  // border: 1px solid;
+  height: 13px;
+  width: 0px;
+  box-shadow: -29px -3px 83px 13px var(--secondary-color);
+
+}
+.service-wrapper{
+  width: 95%;
+  margin: auto;
+  // border: 1px solid white;
+  @include flex($direction:column, $justify:space-between, $align:center);
+  gap: 40px;
+
+}
+.services-box{
+  width: 100%;
+  // border: 1px solid white;
+  @include flex($direction:column, $justify:space-between, $align:center);
+  gap: 30px;
+}
