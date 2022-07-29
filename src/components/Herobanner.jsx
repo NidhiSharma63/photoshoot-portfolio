@@ -13,7 +13,8 @@ import { heroTypography1,SubHeadingDetailsTypo } from '../MaterialUI/typography'
 const Herobanner = () => {
   return (
     <Box
-      className='main-hero-wrapper'>
+      className='main-hero-wrapper'
+      id='main-hero-wrapper'>
       <Box
         className='hero-wrapper'>
           <Box
