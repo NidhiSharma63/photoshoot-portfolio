@@ -60,7 +60,7 @@ const Herobanner = () => {
                       Hi!
                     </Box> I'm  <span 
                     className='hero-intro-name'>
-                      Deepak
+                    jhon doe
                     </span>
                   </Typography>
               </ThemeProvider>
@@ -78,6 +78,7 @@ const Herobanner = () => {
               </ThemeProvider>
           </Box>
       </Box>
+      <Box className='herobanner-bottomShadow'></Box>
     </Box>
   )
 }

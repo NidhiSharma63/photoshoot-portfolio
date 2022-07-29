@@ -12,6 +12,13 @@
   gap: 30px;
   @include flex($direction:column, $justify:center, $align:center);
 }
+.herobanner-bottomShadow{
+  @include position($position:absolute, $top:auto, $right:0, $left:auto);
+  bottom: 0;
+  width: 0px;
+  height: 75px;
+  box-shadow: -29px -3px 83px 13px var(--secondary-color);
+}
 .hero-top-wrapper{
   position: relative;
 }
