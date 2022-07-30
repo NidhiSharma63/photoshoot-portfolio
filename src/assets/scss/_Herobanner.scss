@@ -2,12 +2,9 @@
   width: 100%;
   position: relative;
   margin-top: 130px;
-  // border: 1px solid white;
-  // margin-bottom: 10rem
 }
 .hero-wrapper{
   position: relative;
-  // border: 1px solid white;
   width:91%;
   margin: auto;
   gap: 30px;
@@ -22,11 +19,15 @@
 }
 .hero-top-wrapper{
   position: relative;
+  @include flex($direction:column, $justify:center, $align:center);
+  width: 100%;
 }
 .hero-image-wrapper{
   position:relative;
   overflow: hidden;
-  height: 450px;
+  width: 100%;
+  @include flex($direction:column, $justify:unset, $align:center);
+
 }
 .hero-image{
   transition: all .9s ease-in-out;
@@ -36,7 +37,7 @@
   z-index: -1;
   opacity: 0.1;
   width: 192px;
-  transform: rotate(96deg);
+  transform: rotate(98deg);
 }
 .social-link{
   position: absolute;
@@ -46,38 +47,29 @@
     z-index: 1;
   }
 }
+
 .facebook{
   @include position($position:absolute, $top:136px, $right:auto, $left:0);
-  animation: social-link-anim 2s infinite ease-in-out;
-  transition: all 2s ease-in-out !important;
+  transition: opacity 2s ease-in-out !important;
+  @include social-link-anim($delay:0s);
 }
 .gmail{
   @include position($position:absolute, $top:158px, $right:-5px, $left:auto);
-  animation: social-link-anim 2s infinite ease-in-out;
-  animation-delay: .7s;
-  transition: all 3s ease-in-out !important;
+  @include social-link-anim($delay:1s);
+  transition: opacity 3s ease-in-out !important;
 }
 .instagram{
   @include position($position:absolute, $top:16px, $right:10px, $left:auto);
-  animation: social-link-anim 2s infinite ease-in-out;
-  transition: all 4s ease-in-out !important;
+  @include social-link-anim($delay:.5s);
+  transition: opacity 4s ease-in-out !important;
 
 }
 
 @keyframes social-link-anim {
-  0%{
-    font-size: 33px;
-    padding: 6px;
-  }
   50%{
-    font-size: 50px;
-    padding: 10px;
+    transform: scale(1.3);
     background-color: var(--secondary-color);
     color: var(--primary-color);
-  }
-  100%{
-    font-size: 33px;
-    padding: 6px;
   }
 }
 

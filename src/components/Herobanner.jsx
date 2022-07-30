@@ -42,39 +42,40 @@ const Herobanner = () => {
         className='hero-wrapper'>
           <Box
             className='hero-top-wrapper'>
-              <Box
-               className='yellow-dots'
-               component='img'
-                src={yellowDots}
-                position='absolute'
-              />
-              <Box
-                className="social-link">
-                  <a href="">
-                    <ThemeProvider theme={socialIconTheme}>
-                      <FacebookIcon className='facebook social-icon opacity-0'/>
-                    </ThemeProvider>
-                  </a>
-                  <a href="">
-                    <ThemeProvider theme={socialIconTheme}>
-                      <InstagramIcon className='instagram social-icon opacity-0'/>
-                    </ThemeProvider>
-                  </a>
-                  <a href="">
-                    <ThemeProvider theme={socialIconTheme}>
-                      <EmailIcon className='gmail social-icon opacity-0'/>
-                    </ThemeProvider>
-                  </a>
-                </Box>
-              <Box
-                className='hero-image-wrapper'>
-                <Box
-                  className='hero-image translate-right'
-                  component='img'
-                  src={heroImage}
-                  height='490px'
-                />
+            <Box
+              className='yellow-dots'
+              component='img'
+              src={yellowDots}
+              sx={{width:{xs:'192px',sm:'230px'}}}
+            />
+            <Box
+              className="social-link">
+                <a href="">
+                  <ThemeProvider theme={socialIconTheme}>
+                    <FacebookIcon className='facebook social-icon opacity-0'/>
+                  </ThemeProvider>
+                </a>
+                <a href="">
+                  <ThemeProvider theme={socialIconTheme}>
+                    <InstagramIcon className='instagram social-icon opacity-0'/>
+                  </ThemeProvider>
+                </a>
+                <a href="">
+                  <ThemeProvider theme={socialIconTheme}>
+                    <EmailIcon className='gmail social-icon opacity-0'/>
+                  </ThemeProvider>
+                </a>
               </Box>
+            <Box
+              className='hero-image-wrapper'
+              sx={{height:{sm:'600px',xs:'490px'}}}>
+              <Box
+                className='hero-image translate-right'
+                component='img'
+                src={heroImage}
+                sx={{height:{sm:'620px',xs:'490px'}}}
+              />
+            </Box>
           </Box>
           <Box
             className='hero-text translate-up'>

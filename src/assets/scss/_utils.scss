@@ -20,6 +20,11 @@
   right: $right;
 }
 
+@mixin social-link-anim($delay) {
+  animation: social-link-anim 2s infinite ease-in-out;
+  animation-delay: $delay;
+}
+
 .opacity-0 {
   opacity: 0 !important;
 }
