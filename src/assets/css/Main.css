@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bitter:wght@300;400&family=Lobster+Two&family=Merriweather:wght@300;400&family=Roboto+Slab:wght@300;400&family=Work+Sans:wght@300;400&display=swap");
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.opacity-low {
+  opacity: 0.1 !important;
+}
+
 .translate-right {
   transform: translateX(100%);
   opacity: 0.1;
@@ -7,10 +15,6 @@
 .translate-left {
   transform: translateX(-100%);
   opacity: 0.1;
-}
-
-.transition-ease {
-  transition: all 1s ease-in-out;
 }
 
 .translate-up {
@@ -198,6 +202,7 @@
   right: auto;
   -webkit-animation: social-link-anim 2s infinite ease-in-out;
           animation: social-link-anim 2s infinite ease-in-out;
+  transition: all 2s ease-in-out !important;
 }
 
 .gmail {
@@ -209,6 +214,7 @@
           animation: social-link-anim 2s infinite ease-in-out;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
+  transition: all 3s ease-in-out !important;
 }
 
 .instagram {
@@ -218,6 +224,7 @@
   right: 10px;
   -webkit-animation: social-link-anim 2s infinite ease-in-out;
           animation: social-link-anim 2s infinite ease-in-out;
+  transition: all 4s ease-in-out !important;
 }
 
 @-webkit-keyframes social-link-anim {
@@ -340,13 +347,14 @@
   gap: 40px;
 }
 
-.photoshoot-img {
+.work-img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+  transition: all 1s ease-in-out;
 }
 
 .main-galler-wrapper {

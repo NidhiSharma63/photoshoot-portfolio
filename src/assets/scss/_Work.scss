@@ -7,11 +7,12 @@
   @include flex($direction:column, $justify:space-between, $align:center);
   gap: 40px;
 }
-.photoshoot-img{
+.work-img{
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  transition: all 1s ease-in-out;
 } 
 .main-galler-wrapper{
   @include flex($direction:column, $justify:space-between, $align:center);
