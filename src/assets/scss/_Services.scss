@@ -31,7 +31,6 @@
 
 .skills-details-wrapper{
   @include flex($direction:row, $justify:space-between, $align:center);
-  gap: 10px;
 }
 
 .skill-name{
@@ -41,5 +40,4 @@
   color: var(--secondary-color);
   font-family: var(--font-family-Berkshire);
   letter-spacing: 1px;
-  font-size: 14px;
 }

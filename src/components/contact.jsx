@@ -41,9 +41,14 @@ const Contact = () => {
           </Typography>
          </ThemeProvider>
             <Box
-              className='contact-section-1'>
+              className='contact-section-1'
+              sx={{
+                flexDirection:{xs:'column',sm:'row'},
+                gap:{xs:'20px',sm:'40px'},
+              }}>
               <Box
               display='flex'
+              alignItems='center'
               gap='30px'>
                 <ThemeProvider theme={socialIconTheme}>
                   <LocalPhoneIcon sx={{fontSize:'43px'}}/>
@@ -54,6 +59,7 @@ const Contact = () => {
               </Box>
               <Box
               display='flex'
+              alignItems='center'
               gap='30px'>
                 <ThemeProvider theme={socialIconTheme}>
                  <WhatsAppIcon sx={{fontSize:'43px'}}/>
