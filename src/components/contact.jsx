@@ -62,7 +62,7 @@ const Contact = () => {
                   <LocalPhoneIcon sx={{fontSize:'43px'}}/>
                 </ThemeProvider>
                 <ThemeProvider theme={heroTypography1}>
-                  <Typography sx={{fontSize:{xs:'23px',md:'30px'}}}>9876672678</Typography>
+                  <Typography sx={{fontSize:{xs:'23px',md:'26px'}}}>9876672678</Typography>
                 </ThemeProvider>
               </Box>
               <Box
@@ -73,7 +73,7 @@ const Contact = () => {
                  <WhatsAppIcon sx={{fontSize:'43px'}}/>
                 </ThemeProvider>
                 <ThemeProvider theme={heroTypography1}>
-                  <Typography sx={{fontSize:{xs:'23px',md:'30px'}}}>9876672678</Typography>
+                  <Typography sx={{fontSize:{xs:'23px',md:'26px'}}}>9876672678</Typography>
                 </ThemeProvider>
               </Box>
             </Box>

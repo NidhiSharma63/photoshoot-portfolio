@@ -63,11 +63,8 @@ export const SubHeadingDetailsTypo = createTheme({
           fontWeight: 'var(--fw-light)',
           letterSpacing: '2px',
           color: 'var(--color-white)',
-          '@media screen and (max-width: 900px)': {
+          '@media screen and (min-width: 900px)': {
             fontSize: '19px',
-          },
-          '@media screen and (min-width: 901px)': {
-            fontSize: '21px',
           }
         }
       }
@@ -98,11 +95,8 @@ export const headingTheme = createTheme({
             marginTop: '5px',
             borderRadius: '50%',
           },
-          '@media screen and (max-width: 900px)': {
+          '@media screen and (min-width: 900px)': {
             fontSize: '45px',
-          },
-          '@media screen and (min-width: 901px)': {
-            fontSize: '55px',
           }
         }
       }
@@ -121,11 +115,8 @@ export const SubHeadingTypoTheme = createTheme({
           letterSpacing: '2.2px',
           color: 'var(--secondary-color)',
           marginBottom: '10px',
-          '@media screen and (max-width: 900px)': {
-            fontSize: '35px',
-          },
-          '@media screen and (min-width: 901px)': {
-            fontSize: '40px',
+          '@media screen and (min-width: 900px)': {
+            fontSize: '33px',
           }
         }
       }

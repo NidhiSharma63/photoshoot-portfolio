@@ -88,7 +88,7 @@ const Services = () => {
                   </ThemeProvider>
                   <Box 
                   className='skill-name'
-                  sx={{fontSize:{xs:'14px',sm:'20px',md:'27px'}}}
+                  sx={{fontSize:{xs:'14px',sm:'20px',md:'25px'}}}
                   >{skill.title}</Box>
                 </Box>
               )
