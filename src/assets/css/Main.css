@@ -318,7 +318,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
 }
 
 .skill-name {
@@ -328,7 +327,6 @@
   color: var(--secondary-color);
   font-family: var(--font-family-Berkshire);
   letter-spacing: 1px;
-  font-size: 14px;
 }
 
 .work-main-wrapper {
@@ -368,7 +366,6 @@
 
 .gallery-title-name {
   text-align: center;
-  font-size: 25px !important;
   color: var(--color-white) !important;
   margin-bottom: 30px;
   position: relative;
@@ -404,7 +401,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 20px;
 }
 
 .contact-section-2 {

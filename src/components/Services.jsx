@@ -59,7 +59,7 @@ const Services = () => {
                     <Typography textAlign='center'>{service.title}</Typography>
                   </ThemeProvider>
                   <ThemeProvider theme={SubHeadingDetailsTypo}>
-                    <Typography fontSize='15px'>{service.details}</Typography>
+                    <Typography sx={{fontSize:{xs:'15px',sm:'20px'}}}>{service.details}</Typography>
                   </ThemeProvider>
                 </Box>
               )
@@ -67,7 +67,8 @@ const Services = () => {
           }
         </Box>
         <Box
-        className='skills-details-wrapper'>
+        className='skills-details-wrapper'
+        sx={{gap:{xs:'10px',sm:'20px'}}}>
           {
             skillExepriene.map((skill,index)=>{
               return(
@@ -81,11 +82,14 @@ const Services = () => {
                       <Box 
                         component='span' 
                         color='var(--secondary-color)'
-                        fontSize='30px'>+
+                        sx={{fontSize:{xs:'30px',sm:'45px'}}}>+
                       </Box>
                     </Typography>
                   </ThemeProvider>
-                  <Box className='skill-name'>{skill.title}</Box>
+                  <Box 
+                  className='skill-name'
+                  sx={{fontSize:{xs:'14px',sm:'20px'}}}
+                  >{skill.title}</Box>
                 </Box>
               )
             })

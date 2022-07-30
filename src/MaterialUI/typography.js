@@ -1,5 +1,17 @@
 import { createTheme } from "@mui/material";
 
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+});
+
 export const logoTypography = createTheme({
   components:{
     MuiTypography:{
@@ -73,7 +85,10 @@ export const headingTheme = createTheme({
             margin: 'auto',
             marginTop: '5px',
             borderRadius: '50%',
-          }
+          },
+          [theme.breakpoints.between('sm','xl')]:{
+            fontSize:'45px'
+          },
         }
       }
     }
@@ -85,12 +100,15 @@ export const SubHeadingTypoTheme = createTheme({
     MuiTypography:{
       styleOverrides:{
         root:{
-          fontSize:'30px',
+          fontSize:'28px',
           fontFamily: 'var(--font-family-Berkshire)',
           fontWeight: 'var(--fw-medium)',
           letterSpacing: '2.2px',
           color: 'var(--secondary-color)',
           marginBottom: '10px',
+          [theme.breakpoints.between('sm','xl')]:{
+            fontSize:'35px'
+          },
         }
       }
     }
@@ -107,6 +125,9 @@ export const SkillsDetailsTypo = createTheme({
           fontWeight: 'var(--fw-medium)',
           letterSpacing: '1px',
           color: 'var(--light-whiteColor)',
+          [theme.breakpoints.between('sm','xl')]:{
+            fontSize:'25px'
+          },
         }
       }
     }
