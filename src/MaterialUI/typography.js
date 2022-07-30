@@ -38,6 +38,12 @@ export const heroTypography1 = createTheme({
           fontWeight: 'var(--fw-medium)',
           letterSpacing: '2px',
           color: 'var(--color-white)',
+          '@media screen and (max-width: 900px)': {
+            fontSize: '47px',
+          },
+          '@media screen and (min-width: 901px)': {
+            fontSize: '60px',
+          },
         }
       }
     }
@@ -51,12 +57,18 @@ export const SubHeadingDetailsTypo = createTheme({
         root:{
           textAlign: 'center',
           lineHeight: '1.7',
-          fontSize: '13px',
+          fontSize: '14px',
           width: '100%',
           fontFamily: 'var(--font-family-worksans)',
           fontWeight: 'var(--fw-light)',
           letterSpacing: '2px',
           color: 'var(--color-white)',
+          '@media screen and (max-width: 900px)': {
+            fontSize: '19px',
+          },
+          '@media screen and (min-width: 901px)': {
+            fontSize: '21px',
+          }
         }
       }
     }
@@ -86,9 +98,12 @@ export const headingTheme = createTheme({
             marginTop: '5px',
             borderRadius: '50%',
           },
-          [theme.breakpoints.between('sm','xl')]:{
-            fontSize:'45px'
+          '@media screen and (max-width: 900px)': {
+            fontSize: '45px',
           },
+          '@media screen and (min-width: 901px)': {
+            fontSize: '55px',
+          }
         }
       }
     }
@@ -106,9 +121,12 @@ export const SubHeadingTypoTheme = createTheme({
           letterSpacing: '2.2px',
           color: 'var(--secondary-color)',
           marginBottom: '10px',
-          [theme.breakpoints.between('sm','xl')]:{
-            fontSize:'35px'
+          '@media screen and (max-width: 900px)': {
+            fontSize: '35px',
           },
+          '@media screen and (min-width: 901px)': {
+            fontSize: '40px',
+          }
         }
       }
     }
@@ -125,11 +143,16 @@ export const SkillsDetailsTypo = createTheme({
           fontWeight: 'var(--fw-medium)',
           letterSpacing: '1px',
           color: 'var(--light-whiteColor)',
-          [theme.breakpoints.between('sm','xl')]:{
-            fontSize:'25px'
+          '@media screen and (max-width: 900px)': {
+            fontSize: '25px',
           },
+          '@media screen and (min-width: 901px)': {
+            fontSize: '30px',
+          }
         }
       }
     }
   }
 });
+
+

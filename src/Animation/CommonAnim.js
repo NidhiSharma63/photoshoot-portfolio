@@ -1,7 +1,7 @@
 
 let options = {
   root: null,
-  threshold: .2,
+  threshold: .1,
   rootMargin:'100px 100px 0px 0px'
 }
 
@@ -10,9 +10,10 @@ export const translateAnim = ({selector,classes}) =>{
   let observer = new IntersectionObserver(function(
     entries,
     observer
-  ) {
-    entries.forEach(entry => {
-      if(!entry.isIntersecting) return;
+    ) {
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        console.log(entry.target);
       selectorWrapper.classList.remove(`${classes}`);
       observer.disconnect();
     })
@@ -23,7 +24,7 @@ export const translateAnim = ({selector,classes}) =>{
 export const translateAnimAll = ({selector,classes}) =>{
   let option = {
     root: null,
-    threshold: 1,
+    threshold: .3,
     rootMargin:'100px 100px 0px 0px'
   }
   const selectorWrappers = document.querySelectorAll(`.${selector}`);

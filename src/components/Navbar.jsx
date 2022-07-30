@@ -39,10 +39,10 @@ const Navbar = () => {
             <Stack
             direction='row'
             spacing={10}>
-              <a href='#hero-banner-wrapper' className='nav-link'>Home</a>
-              <a href='#services-wrapper' className='nav-link'>Services</a>
-              <a href='#project-wrapper' className='nav-link'>Work</a>
-              <a href='#blog-wrapper' className='nav-link'>Contact</a>
+              <a href='#main-hero-wrapper' className='nav-link'>Home</a>
+              <a href='#main-service-wrapper' className='nav-link'>Services</a>
+              <a href='#work-main-wrapper' className='nav-link'>Work</a>
+              <a href='#main-contact-wrapper' className='nav-link'>Contact</a>
             </Stack>
           </Box>
           <Box>

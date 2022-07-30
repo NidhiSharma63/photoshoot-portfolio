@@ -39,9 +39,11 @@ const Herobanner = () => {
       className='main-hero-wrapper'
       id='main-hero-wrapper'>
       <Box
-        className='hero-wrapper'>
+        className='hero-wrapper'
+        sx={{flexDirection:{xs:'column',md:'row-reverse'}}}>
           <Box
-            className='hero-top-wrapper'>
+            className='hero-top-wrapper'
+            sx={{width:{xs:'100%',md:'auto'}}}>
             <Box
               className='yellow-dots'
               component='img'
@@ -80,24 +82,22 @@ const Herobanner = () => {
           <Box
             className='hero-text translate-up'>
               <ThemeProvider theme={heroTypography1}>
-                  <Typography sx={{fontSize:{xs:'35px',sm:'47px'}}}>
+                  <Typography>
                     <Box component='span' color='var(--secondary-color)'>
                       Hi!
                     </Box> I'm  <Box component='span'
-                    className='hero-intro-name'
-                    sx={{fontSize:{xs:'35px',sm:'47px'}}}> jhon doe</Box>
+                    className='hero-intro-name'> jhon doe</Box>
                   </Typography>
               </ThemeProvider>
               <ThemeProvider theme={heroTypography1}>
                   <Typography
-                  sx={{fontSize:{xs:'23px',sm:'30px'}}}
+                  sx={{fontSize:{xs:'23px',sm:'30px',md:'40px'}}}
                   fontFamily='var(--font-family-Berkshire)'>
                     <Box component='span' color='var(--secondary-color)'>photo</Box>grapher, <Box component='span' color='var(--secondary-color)'>video</Box>grapher.
                   </Typography>
               </ThemeProvider>
               <ThemeProvider theme={SubHeadingDetailsTypo}>
-                  <Typography
-                  sx={{fontSize:{xs:'17px',sm:'19px'}}}>
+                  <Typography>
                     I wanna help you to get beautiful images to discover your journey.
                   </Typography>
               </ThemeProvider>
