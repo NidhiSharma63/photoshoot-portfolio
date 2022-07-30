@@ -44,7 +44,12 @@ export const menuIcon = createTheme({
           fontSize:'29px',
           '&:hover':{
             color:'var(--secondary-color)',
-          }
+          },
+
+          // adding media query material-ui
+          [theme.breakpoints.between('sm','xl')]:{
+            fontSize:'34px'
+          },
         }
       }
     }
