@@ -1,12 +1,23 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Box,Typography,ThemeProvider,Grid } from '@mui/material';
+
+import { translateAnimAll } from '../Animation/CommonAnim';
 
 import { 
   SubHeadingTypoTheme
 } from '../MaterialUI/typography';
 
 const Gallery = ({titleName,ImagesArray}) => {
-  console.log(ImagesArray);
+
+  let socialIconObj = {
+    selector:'work-img',
+    classes:'opacity-low',
+  }
+
+  useEffect(() => {
+    translateAnimAll(socialIconObj);
+  },[]);
+
   return (
     <Box>
       <ThemeProvider theme={SubHeadingTypoTheme}>
@@ -24,7 +35,7 @@ const Gallery = ({titleName,ImagesArray}) => {
                 component='img'
                 src={item.img}
                 alt={item.alt}
-                className='photoshoot-img'/>
+                className='work-img opacity-low'/>
               </Grid>
             )
           })

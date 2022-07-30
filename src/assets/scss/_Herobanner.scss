@@ -49,15 +49,19 @@
 .facebook{
   @include position($position:absolute, $top:136px, $right:auto, $left:0);
   animation: social-link-anim 2s infinite ease-in-out;
+  transition: all 2s ease-in-out !important;
 }
 .gmail{
   @include position($position:absolute, $top:158px, $right:-5px, $left:auto);
   animation: social-link-anim 2s infinite ease-in-out;
   animation-delay: .7s;
+  transition: all 3s ease-in-out !important;
 }
 .instagram{
   @include position($position:absolute, $top:16px, $right:10px, $left:auto);
   animation: social-link-anim 2s infinite ease-in-out;
+  transition: all 4s ease-in-out !important;
+
 }
 
 @keyframes social-link-anim {

@@ -1,5 +1,5 @@
 import React,{ useEffect } from 'react';
-import { Stack,Box,ThemeProvider,Typography } from '@mui/material';
+import { Box,ThemeProvider,Typography } from '@mui/material';
 import { 
   headingTheme,
   SubHeadingTypoTheme,
@@ -8,18 +8,30 @@ import {
 } from '../MaterialUI/typography';
 
 import { servicesData,skillExepriene } from '../data';
-import { translateAnim } from '../Animation/CommonAnim';
+import { translateAnim,translateAnimAll } from '../Animation/CommonAnim';
 
 
 const Services = () => {
 
-  let serviceObj = {
+  let mainServiceWrapperObj = {
     selector:'main-service-wrapper',
     classes:'translate-up',
   }
 
+  let serviceObj = {
+    selector:'service',
+    classes:'opacity-low',
+  }
+
+  let skillObj = {
+    selector:'skills-details',
+    classes:'opacity-low',
+  }
+
   useEffect(() => {
-    translateAnim(serviceObj);
+    translateAnim(mainServiceWrapperObj);
+    translateAnimAll(serviceObj);
+    translateAnimAll(skillObj);
   },[]);
 
 
@@ -41,7 +53,7 @@ const Services = () => {
             servicesData.map((service,index)=>{
               return (
                 <Box
-                  className='service'
+                  className='service opacity-low'
                   key={index}>
                   <ThemeProvider theme={SubHeadingTypoTheme}>
                     <Typography textAlign='center'>{service.title}</Typography>
@@ -60,7 +72,7 @@ const Services = () => {
             skillExepriene.map((skill,index)=>{
               return(
                 <Box
-                className='skills-details'
+                className='skills-details opacity-low'
                 key={index}
                 textAlign='center'>
                   <ThemeProvider theme={SkillsDetailsTypo}>

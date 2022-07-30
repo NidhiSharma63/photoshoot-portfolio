@@ -9,7 +9,7 @@ import heroImage from '../assets/images/heroImage.webp';
 import yellowDots from '../assets/images/yellowDots.png';
 
 import { heroTypography1,SubHeadingDetailsTypo } from '../MaterialUI/typography';
-import { translateAnim } from '../Animation/CommonAnim';
+import { translateAnim,translateAnimAll } from '../Animation/CommonAnim';
 
 
 const Herobanner = () => {
@@ -23,9 +23,15 @@ const Herobanner = () => {
     selector:'hero-text',
     classes:'translate-up',
   }
+  let socialIconObj = {
+    selector:'social-icon',
+    classes:'opacity-0',
+  }
+
   useEffect(() => {
     translateAnim(heroImageObj);
     translateAnim(heroTextObj);
+    translateAnimAll(socialIconObj);
   },[]);
 
   return (
@@ -46,17 +52,17 @@ const Herobanner = () => {
                 className="social-link">
                   <a href="">
                     <ThemeProvider theme={socialIconTheme}>
-                      <FacebookIcon className='facebook'/>
+                      <FacebookIcon className='facebook social-icon opacity-0'/>
                     </ThemeProvider>
                   </a>
                   <a href="">
                     <ThemeProvider theme={socialIconTheme}>
-                      <InstagramIcon className='instagram'/>
+                      <InstagramIcon className='instagram social-icon opacity-0'/>
                     </ThemeProvider>
                   </a>
                   <a href="">
                     <ThemeProvider theme={socialIconTheme}>
-                      <EmailIcon className='gmail'/>
+                      <EmailIcon className='gmail social-icon opacity-0'/>
                     </ThemeProvider>
                   </a>
                 </Box>
