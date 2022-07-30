@@ -80,24 +80,24 @@ const Herobanner = () => {
           <Box
             className='hero-text translate-up'>
               <ThemeProvider theme={heroTypography1}>
-                  <Typography>
+                  <Typography sx={{fontSize:{xs:'35px',sm:'47px'}}}>
                     <Box component='span' color='var(--secondary-color)'>
                       Hi!
-                    </Box> I'm  <span 
-                    className='hero-intro-name'>
-                    jhon doe
-                    </span>
+                    </Box> I'm  <Box component='span'
+                    className='hero-intro-name'
+                    sx={{fontSize:{xs:'35px',sm:'47px'}}}> jhon doe</Box>
                   </Typography>
               </ThemeProvider>
               <ThemeProvider theme={heroTypography1}>
                   <Typography
-                  fontSize='23px'
+                  sx={{fontSize:{xs:'23px',sm:'30px'}}}
                   fontFamily='var(--font-family-Berkshire)'>
                     <Box component='span' color='var(--secondary-color)'>photo</Box>grapher, <Box component='span' color='var(--secondary-color)'>video</Box>grapher.
                   </Typography>
               </ThemeProvider>
               <ThemeProvider theme={SubHeadingDetailsTypo}>
-                  <Typography>
+                  <Typography
+                  sx={{fontSize:{xs:'17px',sm:'19px'}}}>
                     I wanna help you to get beautiful images to discover your journey.
                   </Typography>
               </ThemeProvider>
