@@ -30,7 +30,9 @@
 
 }
 .hero-image{
-  transition: all .9s ease-in-out;
+  transition-property: transform,opacity;
+  transition-duration:1s;
+  transition-timing-function: ease-in-out;
 }
 .yellow-dots{
   @include position($position:absolute, $top:-76px, $right:auto, $left:-80px);
