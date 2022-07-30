@@ -1,8 +1,5 @@
 .main-service-wrapper{
-  // border: 1px solid;
-  margin-top: 100px;
-  width: 100%;
-  position: relative;
+  @include main-wrapper;
 }
 .service-shadow{
   @include position($position:absolute, $top:100px, $right:auto, $left:0);
@@ -22,7 +19,6 @@
 }
 .services-box{
   width: 100%;
-  // border: 1px solid white;
   @include flex($direction:column, $justify:space-between, $align:center);
   gap: 30px;
 }

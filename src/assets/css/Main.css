@@ -167,6 +167,10 @@
   height: 450px;
 }
 
+.hero-image {
+  transition: all 0.9s ease-in-out;
+}
+
 .yellow-dots {
   position: absolute;
   top: -76px;
@@ -256,6 +260,7 @@
   align-items: center;
   gap: 10px;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 
 .hero-intro-name {
@@ -265,9 +270,10 @@
 }
 
 .main-service-wrapper {
-  margin-top: 100px;
+  margin-top: 80px;
   width: 100%;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 
 .service-shadow {
@@ -321,6 +327,7 @@
   margin-top: 80px;
   width: 100%;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 
 .work-wrapper {
@@ -371,6 +378,7 @@
   margin-top: 80px;
   width: 100%;
   position: relative;
+  transition: all 1s ease-in-out;
   margin-bottom: 10px;
 }
 

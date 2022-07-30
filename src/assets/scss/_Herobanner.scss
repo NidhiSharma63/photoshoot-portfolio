@@ -28,6 +28,9 @@
   overflow: hidden;
   height: 450px;
 }
+.hero-image{
+  transition: all .9s ease-in-out;
+}
 .yellow-dots{
   @include position($position:absolute, $top:-76px, $right:auto, $left:-80px);
   z-index: -1;
@@ -79,6 +82,7 @@
   @include flex($direction:column, $justify:center, $align:center);
   gap: 10px;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 
 .hero-intro-name{

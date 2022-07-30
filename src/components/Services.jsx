@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Stack,Box,ThemeProvider,Typography } from '@mui/material';
 import { 
   headingTheme,
@@ -8,11 +8,24 @@ import {
 } from '../MaterialUI/typography';
 
 import { servicesData,skillExepriene } from '../data';
+import { translateAnim } from '../Animation/CommonAnim';
+
 
 const Services = () => {
+
+  let serviceObj = {
+    selector:'main-service-wrapper',
+    classes:'translate-up',
+  }
+
+  useEffect(() => {
+    translateAnim(serviceObj);
+  },[]);
+
+
   return (
     <Box
-      className='main-service-wrapper'
+      className='main-service-wrapper translate-up'
       id='main-service-wrapper'>
         <Box className='service-shadow'></Box>
       <Box

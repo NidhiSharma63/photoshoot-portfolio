@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Stack,Box,Typography,Button,ThemeProvider } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,9 +8,26 @@ import { socialIconTheme } from '../MaterialUI/IconsTheme'
 import heroImage from '../assets/images/heroImage.webp';
 import yellowDots from '../assets/images/yellowDots.png';
 
-import { heroTypography1,SubHeadingDetailsTypo } from '../MaterialUI/typography'
+import { heroTypography1,SubHeadingDetailsTypo } from '../MaterialUI/typography';
+import { translateAnim } from '../Animation/CommonAnim';
+
 
 const Herobanner = () => {
+
+  let heroImageObj = {
+    selector:'hero-image',
+    classes:'translate-right',
+  }
+
+  let heroTextObj = {
+    selector:'hero-text',
+    classes:'translate-up',
+  }
+  useEffect(() => {
+    translateAnim(heroImageObj);
+    translateAnim(heroTextObj);
+  },[]);
+
   return (
     <Box
       className='main-hero-wrapper'
@@ -46,7 +63,7 @@ const Herobanner = () => {
               <Box
                 className='hero-image-wrapper'>
                 <Box
-                  className='hero-image'
+                  className='hero-image translate-right'
                   component='img'
                   src={heroImage}
                   height='490px'
@@ -54,7 +71,7 @@ const Herobanner = () => {
               </Box>
           </Box>
           <Box
-            className='hero-text'>
+            className='hero-text translate-up'>
               <ThemeProvider theme={heroTypography1}>
                   <Typography>
                     <Box component='span' color='var(--secondary-color)'>

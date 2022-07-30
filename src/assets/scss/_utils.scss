@@ -3,6 +3,7 @@
   margin-top: 80px;
   width: 100%;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 
 @mixin flex($direction, $justify, $align) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Box,Typography,ThemeProvider } from '@mui/material';
 
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -6,6 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
+import { translateAnim } from '../Animation/CommonAnim';
 
 
 import { 
@@ -18,9 +19,19 @@ import {
 } from '../MaterialUI/IconsTheme';
 
 const Contact = () => {
+
+  let contactObj = {
+    selector:'main-contact-wrapper',
+    classes:'translate-contact',
+  }
+
+  useEffect(() => {
+    translateAnim(contactObj);
+  },[]);
+
   return (
     <Box
-      className='main-contact-wrapper'
+      className='main-contact-wrapper translate-contact'
       id="main-contact-wrapper">
       <Box
         className='contact-wrapper'>

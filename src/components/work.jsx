@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Box,Typography,ThemeProvider,Grid } from '@mui/material';
 import Gallery from './Gallery';
 
@@ -7,12 +7,23 @@ import {
 } from '../MaterialUI/typography';
 
 import { PhotoshootImages,weddingShootImages } from '../data';
+import { translateAnim } from '../Animation/CommonAnim';
 
 
 const Work = () => {
+
+  let workObj = {
+    selector:'work-main-wrapper',
+    classes:'translate-up',
+  }
+
+  useEffect(() => {
+    translateAnim(workObj);
+  },[]);
+
   return (
     <Box
-      className='work-main-wrapper'
+      className='work-main-wrapper translate-up'
       id='work-main-wrapper'>
       <Box
         className='work-wrapper'>
