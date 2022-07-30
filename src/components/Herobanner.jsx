@@ -1,5 +1,5 @@
 import React,{ useEffect } from 'react';
-import { Stack,Box,Typography,Button,ThemeProvider } from '@mui/material';
+import { Box,Typography,ThemeProvider } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
@@ -50,12 +50,6 @@ const Herobanner = () => {
           <Box
             className='hero-top-wrapper'
             sx={{width:{xs:'100%',md:'auto'}}}>
-            {/* <Box
-              className='yellow-dots'
-              component='img'
-              src={yellowDots}
-              sx={{width:{xs:'192px',sm:'230px'}}}
-            /> */}
             <Box
               className="social-link">
                 <a href="">

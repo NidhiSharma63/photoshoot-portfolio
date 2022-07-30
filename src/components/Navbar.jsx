@@ -19,7 +19,6 @@ const Navbar = () => {
      <Box
       className='navbar-wrapper'>
       <Box className='nav-shadow'></Box>
-      {/* <Box className='nav-shadow'></Box> */}
       <Box
       className='navbar'>
         <Box>

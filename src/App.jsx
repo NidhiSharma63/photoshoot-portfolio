@@ -18,7 +18,7 @@ const App = () => {
         <Navbar />
         <Herobanner/>
         <Services/>
-        {/* <Work/> */}
+        <Work/>
         <Contact/>
       </Box>
     </ThemeProvider> 
