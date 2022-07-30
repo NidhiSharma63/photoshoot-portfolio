@@ -10,6 +10,13 @@
   gap: 30px;
   @include flex($direction:column, $justify:center, $align:center);
 }
+.yellow-dots{
+  @include position($position:absolute, $top:-76px, $right:auto, $left:0px);
+  z-index: -1;
+  opacity: 0.1;
+  width: 192px;
+  transform: rotate(98deg);
+}
 .herobanner-bottomShadow{
   @include position($position:absolute, $top:auto, $right:0, $left:auto);
   bottom: 0;
@@ -20,7 +27,7 @@
 .hero-top-wrapper{
   position: relative;
   @include flex($direction:column, $justify:center, $align:center);
-  width: 100%;
+  // width: 100%;
 }
 .hero-image-wrapper{
   position:relative;
@@ -34,13 +41,7 @@
   transition-duration:1s;
   transition-timing-function: ease-in-out;
 }
-.yellow-dots{
-  @include position($position:absolute, $top:-76px, $right:auto, $left:-80px);
-  z-index: -1;
-  opacity: 0.1;
-  width: 192px;
-  transform: rotate(98deg);
-}
+
 .social-link{
   position: absolute;
   width: 100%;
@@ -87,4 +88,12 @@
   color: var(--secondary-color);
   margin-left: 10px;
   font-family: var(--font-family-Berkshire);
+}
+
+@media screen and (min-width: 1077px){
+  .hero-text{
+    width: 60%;
+    gap: 26px;
+    margin-bottom: 30px;
+  }
 }

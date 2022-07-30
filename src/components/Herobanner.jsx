@@ -42,14 +42,20 @@ const Herobanner = () => {
         className='hero-wrapper'
         sx={{flexDirection:{xs:'column',md:'row-reverse'}}}>
           <Box
+            className='yellow-dots'
+            component='img'
+            src={yellowDots}
+            sx={{width:{xs:'192px',sm:'230px'}}}
+            />
+          <Box
             className='hero-top-wrapper'
             sx={{width:{xs:'100%',md:'auto'}}}>
-            <Box
+            {/* <Box
               className='yellow-dots'
               component='img'
               src={yellowDots}
               sx={{width:{xs:'192px',sm:'230px'}}}
-            />
+            /> */}
             <Box
               className="social-link">
                 <a href="">
