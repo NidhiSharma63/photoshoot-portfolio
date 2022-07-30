@@ -5,7 +5,7 @@
 }
 .hero-wrapper{
   position: relative;
-  width:91%;
+  width:95%;
   margin: auto;
   gap: 30px;
   @include flex($direction:column, $justify:center, $align:center);

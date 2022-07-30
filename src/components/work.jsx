@@ -6,19 +6,19 @@ import {
   headingTheme
 } from '../MaterialUI/typography';
 
-import { PhotoshootImages,weddingShootImages } from '../data';
 import { translateAnim } from '../Animation/CommonAnim';
+import { PhotoshootImages,weddingShootImages } from '../data';
 
 
 const Work = () => {
 
-  let workObj = {
+  let workMainWrapperObj = {
     selector:'work-main-wrapper',
     classes:'translate-up',
   }
 
   useEffect(() => {
-    translateAnim(workObj);
+    translateAnim(workMainWrapperObj);
   },[]);
 
   return (

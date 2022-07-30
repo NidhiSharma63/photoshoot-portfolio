@@ -82,13 +82,13 @@ const Services = () => {
                       <Box 
                         component='span' 
                         color='var(--secondary-color)'
-                        sx={{fontSize:{xs:'30px',sm:'45px'}}}>+
+                        sx={{fontSize:{xs:'30px',sm:'55px'}}}>+
                       </Box>
                     </Typography>
                   </ThemeProvider>
                   <Box 
                   className='skill-name'
-                  sx={{fontSize:{xs:'14px',sm:'20px'}}}
+                  sx={{fontSize:{xs:'14px',sm:'20px',md:'27px'}}}
                   >{skill.title}</Box>
                 </Box>
               )

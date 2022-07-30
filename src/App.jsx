@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box,ThemeProvider } from '@mui/material';
+import { customBreakPoints } from './MaterialUI/Breakpoints';
 
 import Navbar from './components/Navbar';
 import Herobanner from './components/Herobanner';
@@ -11,13 +12,16 @@ import './assets/css/Main.css';
 
 const App = () => {
   return (
-      <Box>
+    <ThemeProvider theme={customBreakPoints}>
+      <Box
+      className='main-wrapper'>
         <Navbar />
         <Herobanner/>
         <Services/>
         <Work/>
         <Contact/>
       </Box>
+    </ThemeProvider> 
   )
 }
 

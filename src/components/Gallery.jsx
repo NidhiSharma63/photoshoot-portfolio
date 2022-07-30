@@ -30,7 +30,8 @@ const Gallery = ({titleName,ImagesArray}) => {
         {
           ImagesArray.map((item,index)=>{
             return(
-              <Grid item xs={item.span} key={index}>
+              <Grid item xs={item.span} key={index}
+              sx={{height:{xs:'auto',md:'600px'}}}>
                 <Box 
                 component='img'
                 src={item.img}

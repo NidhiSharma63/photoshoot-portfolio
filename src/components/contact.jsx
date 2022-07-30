@@ -34,13 +34,21 @@ const Contact = () => {
       className='main-contact-wrapper translate-contact'
       id="main-contact-wrapper">
       <Box
-        className='contact-wrapper'>
+        className='contact-wrapper'
+        >
          <ThemeProvider theme={headingTheme}>
           <Typography>
             Contact<Box component='span' color='var(--secondary-color)'> me</Box> 
           </Typography>
          </ThemeProvider>
-            <Box
+          <Box
+          className='contact-sections-wrapper'
+          sx={{
+            flexDirection:{xs:'column',md:'row'},
+            gap:{xs:'30px',sm:'40px'},
+          }}
+          >
+          <Box
               className='contact-section-1'
               sx={{
                 flexDirection:{xs:'column',sm:'row'},
@@ -54,7 +62,7 @@ const Contact = () => {
                   <LocalPhoneIcon sx={{fontSize:'43px'}}/>
                 </ThemeProvider>
                 <ThemeProvider theme={heroTypography1}>
-                  <Typography fontSize='23px'>9876672678</Typography>
+                  <Typography sx={{fontSize:{xs:'23px',md:'30px'}}}>9876672678</Typography>
                 </ThemeProvider>
               </Box>
               <Box
@@ -65,7 +73,7 @@ const Contact = () => {
                  <WhatsAppIcon sx={{fontSize:'43px'}}/>
                 </ThemeProvider>
                 <ThemeProvider theme={heroTypography1}>
-                  <Typography fontSize='23px'>9876672678</Typography>
+                  <Typography sx={{fontSize:{xs:'23px',md:'30px'}}}>9876672678</Typography>
                 </ThemeProvider>
               </Box>
             </Box>
@@ -87,6 +95,8 @@ const Contact = () => {
                   </ThemeProvider>
                 </a>
             </Box>
+          </Box>
+
       </Box>
     </Box>
   )
