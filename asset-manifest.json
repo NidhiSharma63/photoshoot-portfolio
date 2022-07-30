@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photoshoot-portfolio/static/css/main.5b994ced.css",
-    "main.js": "/photoshoot-portfolio/static/js/main.6d8b5858.js",
+    "main.css": "/photoshoot-portfolio/static/css/main.09c49ec4.css",
+    "main.js": "/photoshoot-portfolio/static/js/main.00f71a83.js",
     "static/media/img1.jpg": "/photoshoot-portfolio/static/media/img1.e595b12eec41d896d173.jpg",
     "static/media/w-img5.jpg": "/photoshoot-portfolio/static/media/w-img5.39c5823585c19211ef72.jpg",
     "static/media/img4.jpg": "/photoshoot-portfolio/static/media/img4.021a50ee0e5edb6f9b7e.jpg",
@@ -15,11 +15,11 @@
     "static/media/heroImage.webp": "/photoshoot-portfolio/static/media/heroImage.fd182f9c8ef64cbbb1c3.webp",
     "static/media/yellowDots.png": "/photoshoot-portfolio/static/media/yellowDots.eb7ab467f4800e5d7994.png",
     "index.html": "/photoshoot-portfolio/index.html",
-    "main.5b994ced.css.map": "/photoshoot-portfolio/static/css/main.5b994ced.css.map",
-    "main.6d8b5858.js.map": "/photoshoot-portfolio/static/js/main.6d8b5858.js.map"
+    "main.09c49ec4.css.map": "/photoshoot-portfolio/static/css/main.09c49ec4.css.map",
+    "main.00f71a83.js.map": "/photoshoot-portfolio/static/js/main.00f71a83.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b994ced.css",
-    "static/js/main.6d8b5858.js"
+    "static/css/main.09c49ec4.css",
+    "static/js/main.00f71a83.js"
   ]
 }
