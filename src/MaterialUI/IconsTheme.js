@@ -1,5 +1,18 @@
 import { createTheme } from "@mui/material";
 
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+});
+
+
 export const crossIcon = createTheme({
   components:{
     MuiSvgIcon:{
@@ -50,11 +63,12 @@ export const socialIconTheme = createTheme({
           padding:'6px',
           borderRadius:'50%',
           background: 'var(--bg-color-dark)',
-          // transition: 'all 0.3s ease-in-out',
-          // '&:hover':{
-          //   background: 'var(--color-white)',
-          //   color:'var(--bg-color-light)',
-          // }
+
+          // adding media query material-ui
+          [theme.breakpoints.between('sm','xl')]:{
+            fontSize:'50px',
+            padding:'10px',
+          },
         }
       }
     }
