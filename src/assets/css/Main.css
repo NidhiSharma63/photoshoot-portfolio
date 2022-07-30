@@ -312,6 +312,10 @@
   gap: 30px;
 }
 
+.service {
+  transition: all 1s ease-in-out;
+}
+
 .skills-details-wrapper {
   display: flex;
   flex-direction: row;
