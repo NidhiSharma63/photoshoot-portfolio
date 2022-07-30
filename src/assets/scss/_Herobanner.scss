@@ -27,7 +27,6 @@
 .hero-top-wrapper{
   position: relative;
   @include flex($direction:column, $justify:center, $align:center);
-  // width: 100%;
 }
 .hero-image-wrapper{
   position:relative;
