@@ -6,6 +6,7 @@ export const customBreakPoints = createTheme({
     values: {
       xs: 0,
       sm: 600,
+      xmd:800,
       md: 950,
       lg: 1200,
       xl: 1536,

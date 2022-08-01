@@ -9,11 +9,15 @@
 }
 .work-img{
   height: 100%;
-  width: 100%;
+  width: 99%;
+  margin: auto;
   object-fit: cover;
   object-position: 50% 50%;
-  transition: all 1s ease-in-out;
+  transition: all .6s ease-in-out;
 } 
+.work-img:hover{
+  transform: scale(1.1);
+}
 .main-galler-wrapper{
   @include flex($direction:column, $justify:space-between, $align:center);
   gap: 50px;

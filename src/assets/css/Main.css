@@ -59,7 +59,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: var(--light-whiteColor);
+  color: var(--color-white);
   font-family: var(--font-family-Roboto);
   font-size: 18px;
   font-weight: var(--fw-medium);
@@ -93,6 +93,7 @@
 .side-navbar-wrapper {
   position: fixed;
   top: 0px;
+  left: auto;
   right: 0;
   height: 100vh;
   width: 60%;
@@ -354,12 +355,17 @@
 
 .work-img {
   height: 100%;
-  width: 100%;
+  width: 99%;
+  margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.work-img:hover {
+  transform: scale(1.1);
 }
 
 .main-galler-wrapper {
