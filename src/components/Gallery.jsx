@@ -26,12 +26,12 @@ const Gallery = ({titleName,ImagesArray}) => {
           {titleName}
         </Typography>
       </ThemeProvider>
-      <Grid container spacing={1}>
+      <Grid container spacing={2}>
         {
           ImagesArray.map((item,index)=>{
             return(
-              <Grid item xs={item.span} key={index}
-              sx={{height:{xs:'auto',md:'600px'}}}>
+              <Grid item xs={6} xmd={3} key={index}
+              sx={{height:{xs:'auto',sm:'400px', overflow:'hidden'}}}>
                 <Box 
                 component='img'
                 src={item.img}
